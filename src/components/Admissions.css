@@ -1,0 +1,194 @@
+/* ============================================
+   ADMISSIONS SECTION
+   ============================================ */
+.admissions-section {
+  position: relative;
+  padding: clamp(5rem, 10vw, 8rem) 0;
+  overflow: hidden;
+}
+
+/* Background */
+.admissions-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.admissions-bg-image {
+  position: absolute;
+  inset: 0;
+  background: url('/divine-day-school-kolkata-schools-2jdr2lj-250.jpg') center/cover no-repeat;
+}
+
+.admissions-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(9, 26, 56, 0.92) 0%,
+    rgba(15, 36, 72, 0.88) 50%,
+    rgba(26, 58, 110, 0.85) 100%
+  );
+}
+
+.admissions-spotlight {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200, 168, 78, 0.06) 0%, transparent 60%);
+  animation: spotlight-pulse 8s ease-in-out infinite;
+}
+
+@keyframes spotlight-pulse {
+  0%, 100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+  50% { opacity: 1; transform: translateX(-50%) scale(1.2); }
+}
+
+.admissions-glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.admissions-glow-1 {
+  width: 300px;
+  height: 300px;
+  background: rgba(200, 168, 78, 0.08);
+  top: 20%;
+  left: 5%;
+  animation: float-slow 12s ease-in-out infinite;
+}
+
+.admissions-glow-2 {
+  width: 250px;
+  height: 250px;
+  background: rgba(42, 82, 152, 0.1);
+  bottom: 10%;
+  right: 10%;
+  animation: float-slow 10s ease-in-out infinite reverse;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(20px, -20px); }
+}
+
+/* Particles */
+.admissions-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.admissions-particle {
+  position: absolute;
+  border-radius: 50%;
+  animation: float-particle linear infinite;
+}
+
+/* Counters */
+.admissions-counters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.counter-card {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  transition: transform var(--transition-base);
+}
+
+.counter-card:hover {
+  transform: translateY(-4px);
+}
+
+.counter-icon {
+  font-size: 1.5rem;
+  color: var(--gold);
+  margin-bottom: 0.25rem;
+}
+
+.counter-value {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1;
+}
+
+.counter-label {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Content */
+.admissions-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.admissions-ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+/* Trust Indicators */
+.admissions-trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.trust-check {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admissions-counters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admissions-ctas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admissions-trust {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
