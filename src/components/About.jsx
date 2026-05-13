@@ -57,7 +57,7 @@ export default function About() {
           >
             <div className="about-image-container">
               <img
-                src="/unnamed_3.jpg"
+                src="hero-students.jpg"
                 alt="Students at Divine Day School"
                 className="about-image"
                 loading="lazy"

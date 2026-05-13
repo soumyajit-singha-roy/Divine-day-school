@@ -4,12 +4,12 @@ import { HiX, HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import './Gallery.css';
 
 const images = [
-  { src: '/divine-day-school-entally-kolkata-english-medium-schools-1jw33k2e07-250.jpg', alt: 'Campus Life', span: 'tall' },
-  { src: '/divine-day-school-entally-kolkata-english-medium-schools-sznqzqhil3-250.jpg', alt: 'Classroom Learning', span: 'wide' },
-  { src: '/divine-day-school-kolkata-schools-2jdr2lj-250.jpg', alt: 'Library', span: 'normal' },
-  { src: '/divine-day-school-kolkata-schools.jpg', alt: 'Sports & Activities', span: 'normal' },
-  { src: '/unnamed_3.jpg', alt: 'Students', span: 'wide' },
-  { src: '/divine-day-school-entally-kolkata-english-medium-schools-1jw33k2e07-250.jpg', alt: 'School Events', span: 'tall' },
+  { src: 'campus-1.jpg', alt: 'Campus Life', span: 'tall' },
+  { src: 'campus-2.jpg', alt: 'Classroom Learning', span: 'wide' },
+  { src: 'campus-3.jpg', alt: 'Library', span: 'normal' },
+  { src: 'campus-4.jpg', alt: 'Sports & Activities', span: 'normal' },
+  { src: 'hero-students.jpg', alt: 'Students', span: 'wide' },
+  { src: 'campus-1.jpg', alt: 'School Events', span: 'tall' },
 ];
 
 export default function Gallery() {
