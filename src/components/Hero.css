@@ -20,7 +20,6 @@
 .hero-bg-image {
   position: absolute;
   inset: 0;
-  background: url('hero-students.jpg') center/cover no-repeat;
 }
 
 .hero-bg-overlay {

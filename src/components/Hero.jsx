@@ -19,7 +19,7 @@ export default function Hero() {
     <section id="home" className="hero">
       {/* Background Layers */}
       <div className="hero-bg">
-        <div className="hero-bg-image" />
+        <div className="hero-bg-image" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}hero-students.jpg)` }} />
         <div className="hero-bg-overlay" />
       </div>
 

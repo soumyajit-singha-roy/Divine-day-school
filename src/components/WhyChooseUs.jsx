@@ -81,7 +81,7 @@ export default function WhyChooseUs() {
       {/* Background Decoration */}
       <div className="why-bg-gradient" />
 
-      <div className="container">
+      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <motion.div
           className="why-header"
           initial={{ opacity: 0, y: 40 }}

@@ -40,7 +40,7 @@ export default function Admissions() {
     <section id="admissions" className="section admissions-section" ref={sectionRef}>
       {/* Animated Background */}
       <div className="admissions-bg">
-        <div className="admissions-bg-image" />
+        <div className="admissions-bg-image" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}campus-3.jpg)` }} />
         <div className="admissions-bg-overlay" />
         <div className="admissions-spotlight" />
         <div className="admissions-glow-orb admissions-glow-1" />

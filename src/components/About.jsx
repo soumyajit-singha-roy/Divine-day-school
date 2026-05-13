@@ -57,7 +57,7 @@ export default function About() {
           >
             <div className="about-image-container">
               <img
-                src="hero-students.jpg"
+                src={`${import.meta.env.BASE_URL}hero-students.jpg`}
                 alt="Students at Divine Day School"
                 className="about-image"
                 loading="lazy"

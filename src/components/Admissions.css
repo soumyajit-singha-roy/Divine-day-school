@@ -17,7 +17,6 @@
 .admissions-bg-image {
   position: absolute;
   inset: 0;
-  background: url('campus-3.jpg') center/cover no-repeat;
 }
 
 .admissions-bg-overlay {

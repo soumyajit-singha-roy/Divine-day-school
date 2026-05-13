@@ -3,13 +3,14 @@ import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { HiX, HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import './Gallery.css';
 
+const base = import.meta.env.BASE_URL;
 const images = [
-  { src: 'campus-1.jpg', alt: 'Campus Life', span: 'tall' },
-  { src: 'campus-2.jpg', alt: 'Classroom Learning', span: 'wide' },
-  { src: 'campus-3.jpg', alt: 'Library', span: 'normal' },
-  { src: 'campus-4.jpg', alt: 'Sports & Activities', span: 'normal' },
-  { src: 'hero-students.jpg', alt: 'Students', span: 'wide' },
-  { src: 'campus-1.jpg', alt: 'School Events', span: 'tall' },
+  { src: `${base}campus-1.jpg`, alt: 'Campus Life', span: 'tall' },
+  { src: `${base}campus-2.jpg`, alt: 'Classroom Learning', span: 'wide' },
+  { src: `${base}campus-3.jpg`, alt: 'Library', span: 'normal' },
+  { src: `${base}campus-4.jpg`, alt: 'Sports & Activities', span: 'normal' },
+  { src: `${base}hero-students.jpg`, alt: 'Students', span: 'wide' },
+  { src: `${base}campus-1.jpg`, alt: 'School Events', span: 'tall' },
 ];
 
 export default function Gallery() {
